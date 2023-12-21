@@ -1,0 +1,11 @@
+    case removeSelectedPoints
+    case switchEditMode
+    case toggleGrid
+    case togglePlayCollage
+}
+
+enum CollageModification {
+    case changeBackground(ShapeModification)
+    case connectControlPoints(Set<String>)
+    case disconnectControlPoints(Set<String>)
+    case changeCornerRadius(CGFloat)
